@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>osiris.rocks</title>
+		<meta name="description" content="osiris land" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<a class="skip" href="#content">Skip to content</a>
+
+		<main id="content">
+			<section class="hero" id="top">
+				<div class="container hero__inner">
+					<div class="hero__copy" data-reveal>
+						<p class="kicker">osiris.rocks</p>
+						<h1 class="hero__title">
+							hi, im osiris, a full stack developer
+							thats diverse in <span class="hero__accent">html</span>, js,
+							c++, luau, python, and react.
+						</h1>
+						<p class="hero__sub">
+							i build fast, clean interfaces and ship production-worthy code.
+						</p>
+						<div class="hero__cta">
+							<button class="button" type="button" id="seeWork">see work</button>
+						</div>
+						<div class="hero__meta">
+							<a class="pill" href="https://discord.com/users/" target="_blank" rel="noreferrer" data-egg="discord">discord: @ f6ob</a>
+							<a class="pill" href="fibre.html">try fibre</a>
+						</div>
+					</div>
+
+					<div class="hero__panel" aria-hidden="true" data-reveal>
+						<div class="panel">
+							<div class="panel__shine"></div>
+							<div class="panel__frame"></div>
+							<div class="panel__content">
+								<div class="panel__line"></div>
+								<div class="panel__line panel__line--short"></div>
+								<div class="panel__line"></div>
+								<div class="panel__line panel__line--short"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer" data-reveal>
+			<div class="container footer__inner">
+				<p class="muted small">© <span id="year"></span> osiris</p>
+				<a class="muted small" href="#top">Back to top</a>
+			</div>
+		</footer>
+
+		<div class="transition-overlay" id="transitionOverlay" aria-hidden="true"></div>
+
+		<script src="main.js" defer></script>
+	</body>
+</html>

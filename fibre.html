@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>fibre land</title>
+		<meta name="description" content="fibre (experimental)" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="fibre.css" />
+	</head>
+	<body>
+		<a class="skip" href="#app">Skip to content</a>
+
+		<main id="app" class="fibre">
+			<section class="hero fibre__wrap" id="top">
+				<div class="container fibre__inner">
+					<div class="fibre__top" data-reveal>
+						<p class="kicker"><a href="index.html" class="fibre__back">← back</a></p>
+						<h1 class="hero__title">try <span class="hero__accent">fibre</span>.</h1>
+						<p class="hero__sub">this website is no where near done btw</p>
+					</div>
+
+					<div class="fibre__card" data-reveal>
+						<div class="fibre__toolbar">
+							<label class="fibre__label" for="model">version</label>
+							<select class="fibre__select" id="model" name="model">
+								<option value="fibre-3.5">fibre 3.5</option>
+								<option value="fibre-4" selected>fibre 4</option>
+								<option value="fibre-4-pro">fibre 4 pro</option>
+								<option value="fibre-r1">fibre r1</option>
+								<option value="fibre-harmonic">fibre harmonic</option>
+							</select>
+							<span class="fibre__status" id="status">ready</span>
+						</div>
+
+						<div class="fibre__thread" id="thread" aria-live="polite"></div>
+
+						<form class="fibre__composer" id="composer" autocomplete="off">
+							<input class="fibre__input" id="prompt" name="prompt" placeholder="say something…" />
+							<button class="button fibre__send" type="submit">send</button>
+						</form>
+
+						<p class="muted small fibre__note">tip: if the api isnt connected yet, this page runs in demo mode.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="transition-overlay" id="transitionOverlay" aria-hidden="true"></div>
+
+		<script src="main.js" defer></script>
+		<script src="fibre.js" defer></script>
+	</body>
+</html>
